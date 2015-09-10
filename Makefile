@@ -5,6 +5,11 @@ VERSION_ALIASES =
 TITLE =			Python
 DESCRIPTION =		Python
 SOURCE_URL =		https://github.com/scaleway/image-app-python
+VENDOR_URL =		https://www.python.org/
+
+IMAGE_VOLUME_SIZE =	50G
+IMAGE_BOOTSCRIPT =	stable
+IMAGE_NAME =		Python
 
 
 # Forward ports
@@ -16,4 +21,3 @@ all:	docker-rules.mk
 docker-rules.mk:
 	wget -qO - http://j.mp/scw-builder | bash
 -include docker-rules.mk
-## Here you can add custom commands and overrides
