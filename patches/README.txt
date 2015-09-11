@@ -79,6 +79,6 @@ that way instead of how it currently is, we'd love to hear from you!
 
 You can make an issue and/or a pull request on:
 
-        https://github.com/scaleway/image-app-python
+        https://github.com/scaleway-community/scaleway-python
 
 ❤
