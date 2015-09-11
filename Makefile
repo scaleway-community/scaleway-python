@@ -1,5 +1,4 @@
-DOCKER_NAMESPACE =	armbuild/
-NAME =			scw-app-python
+NAME =			python
 VERSION =		latest
 VERSION_ALIASES =
 TITLE =			Python

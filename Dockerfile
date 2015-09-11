@@ -1,5 +1,5 @@
-## -*- docker-image-name: "armbuild/scw-app-python:latest" -*-
-FROM armbuild/scw-distrib-ubuntu:trusty
+## -*- docker-image-name: "scaleway/python:latest" -*-
+FROM scaleway/ubuntu:trusty
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
 
