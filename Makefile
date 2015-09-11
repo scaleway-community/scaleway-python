@@ -4,7 +4,7 @@ VERSION =		latest
 VERSION_ALIASES =
 TITLE =			Python
 DESCRIPTION =		Python
-SOURCE_URL =		https://github.com/scaleway/image-app-python
+SOURCE_URL =		https://github.com/scaleway-community/scaleway-python
 VENDOR_URL =		https://www.python.org/
 
 IMAGE_VOLUME_SIZE =	50G

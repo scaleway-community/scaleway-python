@@ -1,6 +1,6 @@
 # Official python image on Scaleway
 
-[![Travis](https://img.shields.io/travis/scaleway/image-app-python.svg)](https://travis-ci.org/scaleway/image-app-python)
+[![Travis](https://img.shields.io/travis/scaleway-community/scaleway-python.svg)](https://travis-ci.org/scaleway-community/scaleway-python)
 [![Scaleway ImageHub](https://img.shields.io/badge/ImageHub-view-ff69b4.svg)](https://hub.scaleway.com/python.html)
 [![Run on Scaleway](https://img.shields.io/badge/Scaleway-run-69b4ff.svg)](https://cloud.scaleway.com/#/servers/new?image=d6a95608-0a09-4829-8b54-2bebed739f0b)
 
