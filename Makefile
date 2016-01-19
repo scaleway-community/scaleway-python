@@ -5,6 +5,8 @@ TITLE =			Python
 DESCRIPTION =		Python
 SOURCE_URL =		https://github.com/scaleway-community/scaleway-python
 VENDOR_URL =		https://www.python.org/
+DEFAULT_IMAGE_ARCH =	x86_64
+
 
 IMAGE_VOLUME_SIZE =	50G
 IMAGE_BOOTSCRIPT =	stable

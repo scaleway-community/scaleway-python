@@ -1,5 +1,13 @@
 ## -*- docker-image-name: "scaleway/python:latest" -*-
-FROM scaleway/ubuntu:trusty
+FROM scaleway/ubuntu:amd64-trusty
+# following 'FROM' lines are used dynamically thanks do the image-builder
+# which dynamically update the Dockerfile if needed.
+#FROM scaleway/ubuntu:armhf-trusty       # arch=armv7l
+#FROM scaleway/ubuntu:arm64-trusty       # arch=arm64
+#FROM scaleway/ubuntu:i386-trusty        # arch=i386
+#FROM scaleway/ubuntu:mips-trusty        # arch=mips
+
+
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
 
@@ -35,20 +43,14 @@ RUN easy_install \
     virtualenvwrapper
 
 
-ADD ./patches/README.txt /
-RUN ln -s /README.txt /root/
+COPY ./overlay /
 
 
 # Create templates to deploy a web environment easily
-RUN mkdir /var/www
-RUN chown www-data:www-data /var/www
-
-
-ADD ./patches/etc/nginx/sites-available/my_website /etc/nginx/sites-available/
-RUN rm /etc/nginx/sites-enabled/default
-
-
-ADD ./patches/etc/uwsgi/apps-available/my_django_project.ini /etc/uwsgi/apps-available/
+RUN ln -s /README.txt /root/ \
+ && mkdir /var/www \
+ && chown www-data:www-data /var/www \
+ && rm /etc/nginx/sites-enabled/default
 
 
 # Clean rootfs from image-builder
