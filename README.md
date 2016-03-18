@@ -13,7 +13,7 @@ This image is built using [Image Tools](https://github.com/scaleway/image-tools)
 
 ---
 
-**This image is meant to be used on a C1 server.**
+**This image is meant to be used on a Scaleway server.**
 
 We use the Docker's building system and convert it at the end to a disk image that will boot on real servers without Docker. Note that the image is still runnable as a Docker container for debug or for inheritance.
 
@@ -22,14 +22,9 @@ We use the Docker's building system and convert it at the end to a disk image th
 
 ---
 
-## Install
+## How to hack
 
-Build and write the image to /dev/nbd1 (see [documentation](https://www.scaleway.com/docs/create_an_image_with_docker))
-
-    $ make install
-
-Full list of commands available at: [scaleway/image-tools](https://github.com/scaleway/image-tools/#commands)
-
+You can see the documentation to craft your own image with our [image-builder](https://github.com/scaleway/image-builder)
 
 ---
 
