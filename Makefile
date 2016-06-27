@@ -14,7 +14,7 @@ IMAGE_NAME =		Python
 
 
 # Forward ports
-SHELL_DOCKER_OPTS ?=    -p 80:80 -p 443:443 -p 8000:8000
+SHELL_DOCKER_OPTS ?=    -p 80 -p 443 -p 8000
 
 
 ## Image tools  (https://github.com/scaleway/image-tools)
