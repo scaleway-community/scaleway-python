@@ -23,6 +23,7 @@ RUN apt-get -q update \
         emacs vim \
         git mercurial subversion \
         python python3 \
+        python3-pip \
         python-setuptools \
         libmysqlclient-dev python-dev \
         libpq-dev \
